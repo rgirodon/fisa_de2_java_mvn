@@ -35,6 +35,11 @@ class CalculatorTest {
 	}
 	
 	@Test
+	void testIntDivide() {
+		assertEquals(2, calculator.divide(5, 2));
+	}
+	
+	@Test
 	void testDivideByZero() {
 		assertThrows(IllegalArgumentException.class, () -> calculator.divide(42, 0));
 	}
