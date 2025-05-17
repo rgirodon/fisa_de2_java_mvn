@@ -13,13 +13,13 @@ import org.apache.commons.io.FileUtils;
  */
 public class App 
 {
-	/*
+	
     private static final String FILENAME = "demo_file.txt";
-	*/
+	
 	
 	public static void main( String[] args ) {
 				
-		/*
+		
         System.out.println( "Creating file with commons io..." );
         
         try {
@@ -31,7 +31,7 @@ public class App
 		}
         
         System.out.println( "File created with commons io !" );
-        */
+        
 		
 		/*
 		String name = DBHelper.findStudentNameById(1);
@@ -63,16 +63,17 @@ public class App
 		}
 		*/
 		
-		
+		/*
 		Collection<String> cities = MysqlDBHelper.findOfficeCities();
 		
 		for (String city : cities) {
 			System.out.println("City found : " + city);
 		}
 		
-		String city = MysqlDBHelper.findOfficeCityById(2);
-		System.out.println("City 2 : " + city);
-		
+		String city = MysqlDBHelper.findOfficeCityById(4);
+		System.out.println("City 4 : " + city);
+		*/
+        
 		/*
 		Collection<String> usernames = PGDBHelper.findUsernames();
 		
