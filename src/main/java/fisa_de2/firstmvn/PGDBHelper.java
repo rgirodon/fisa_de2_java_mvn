@@ -17,7 +17,7 @@ public class PGDBHelper {
 	    String url = "jdbc:postgresql://localhost:5432/postgres";
 	    String username = "postgres";
 	    String password = "password";
-	    String query = "SELECT username FROM account";		
+	    String query = "SELECT name FROM account";		
 		
 		
 		try(Connection con = DriverManager.getConnection(url, username, password);
@@ -28,7 +28,7 @@ public class PGDBHelper {
 		    
 		    while (rs.next()) {
 		    	
-		    	result.add(rs.getString("username"));
+		    	result.add(rs.getString("name"));
 		    }
 		}
 		catch(Exception e) {

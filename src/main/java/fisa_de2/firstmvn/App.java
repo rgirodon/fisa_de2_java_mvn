@@ -19,7 +19,7 @@ public class App
 	
 	public static void main( String[] args ) {
 				
-		
+		/*
         System.out.println( "Creating file with commons io..." );
         
         try {
@@ -31,7 +31,7 @@ public class App
 		}
         
         System.out.println( "File created with commons io !" );
-        
+        */
 		
 		/*
 		String name = DBHelper.findStudentNameById(1);
@@ -44,11 +44,11 @@ public class App
 			System.out.println("No student found for id 1");
 		}
 		
-		name = DBHelper.findStudentNameById(3);
+		name = DBHelper.findStudentNameById(2);
 		
 		if (name != null) {
 			
-			System.out.println("Student found for id 3 : " + name);
+			System.out.println("Student found for id 2 : " + name);
 		}
 		else {
 			System.out.println("No student found for id 3");
@@ -63,7 +63,7 @@ public class App
 		}
 		*/
 		
-		/*
+		
 		Collection<String> cities = MysqlDBHelper.findOfficeCities();
 		
 		for (String city : cities) {
@@ -72,7 +72,7 @@ public class App
 		
 		String city = MysqlDBHelper.findOfficeCityById(4);
 		System.out.println("City 4 : " + city);
-		*/
+		
         
 		/*
 		Collection<String> usernames = PGDBHelper.findUsernames();

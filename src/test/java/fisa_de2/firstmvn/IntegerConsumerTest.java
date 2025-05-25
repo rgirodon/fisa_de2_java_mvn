@@ -13,10 +13,10 @@ public class IntegerConsumerTest {
 		
 		IntegerProvider mockedIntegerProvider = mock(IntegerProvider.class);
 	
-		when(mockedIntegerProvider.provideInteger()).thenReturn(25);
+		when(mockedIntegerProvider.provideInteger()).thenReturn(24);
 		
 		IntegerConsumer integerConsumer = new IntegerConsumer(mockedIntegerProvider);
 		
-		assertEquals(50, integerConsumer.consumeInteger());
+		assertEquals(48, integerConsumer.consumeInteger());
 	}
 }
