@@ -18,11 +18,13 @@ public class MysqlDBHelper {
 	    String url = "jdbc:mysql://localhost:3306/test";
 	    String username = "root";
 	    String password = "password";
-	    String query = "SELECT CITY FROM offices";		
+	    String query = "SELECT DISTINCT CITY FROM offices";		
 		
 		
-		try(Connection con = DriverManager.getConnection(url, username, password);
-			Statement st = con.createStatement();) {		
+		try(
+			Connection con = DriverManager.getConnection(url, username, password);
+			Statement st = con.createStatement();
+				) {		
 		
 		    // Execute the query
 		    ResultSet rs = st.executeQuery(query);
@@ -59,7 +61,7 @@ public class MysqlDBHelper {
 		    // Execute the query
 		    ResultSet rs = st.executeQuery();
 		    
-		    while (rs.next()) {
+		    if (rs.next()) {
 		    	
 		    	result = rs.getString("CITY");
 		    }
