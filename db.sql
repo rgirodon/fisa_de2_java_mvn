@@ -29,10 +29,11 @@ INSERT INTO account(
 CREATE TABLE `offices` (
   `ID` int NOT NULL,
   `CITY` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`ID`);
+  PRIMARY KEY (`ID`));
   
 INSERT INTO `offices` (`ID`,`CITY`) VALUES (1, 'Bordeaux');
 INSERT INTO `offices` (`ID`,`CITY`) VALUES (2, 'Strasbourg');
+INSERT INTO `offices` (`ID`,`CITY`) VALUES (3, 'Paris');
 
 
   

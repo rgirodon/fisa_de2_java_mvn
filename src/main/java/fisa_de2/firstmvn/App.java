@@ -63,23 +63,26 @@ public class App
 		}
 		*/
 		
-		
+		/*
 		Collection<String> cities = MysqlDBHelper.findOfficeCities();
 		
 		for (String city : cities) {
 			System.out.println("City found : " + city);
 		}
 		
-		String city = MysqlDBHelper.findOfficeCityById(4);
-		System.out.println("City 4 : " + city);
-		
+		String city = MysqlDBHelper.findOfficeCityById(3);
+		System.out.println("City 3 : " + city);
+		*/
         
-		/*
+		
 		Collection<String> usernames = PGDBHelper.findUsernames();
 		
 		for (String username : usernames) {
 			System.out.println("User found : " + username);
 		}
-		*/
+		
+		String bestCharacter = PGDBHelper.findUsernameById(2);
+		System.out.println("Best user : " + bestCharacter);
+		
     }
 }

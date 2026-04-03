@@ -11,8 +11,10 @@ public class IntegerConsumer {
 
 	public Integer consumeInteger() {
 		
-		Integer integerToConsume = this.integerProvider.provideInteger();
+		Integer integer1ToConsume = this.integerProvider.provideInteger();
 		
-		return 2 * integerToConsume; 
+		Integer integer2ToConsume = this.integerProvider.provideInteger();
+		
+		return 2 * (integer1ToConsume + integer2ToConsume); 
 	}
 }
